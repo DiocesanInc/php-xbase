@@ -18,7 +18,7 @@ class CharConverter extends AbstractFieldDataConverter
             $value = iconv($inCharset, 'utf-8', $value);
         }
 
-        return trim($value);
+        return rtrim($value);
     }
 
     public function toBinaryString($value): string
